@@ -91,6 +91,7 @@ const App: React.FC = () => {
   }, []);
 
   const [name, setName] = useState("<username>");
+  const [lastname, setlastname] = useState("<userlast>");
 
   const handleButtonClick = () => {
     slider.current?.slideNext();
@@ -102,7 +103,7 @@ const App: React.FC = () => {
         <IonSlides pager={true} options={slideOpts} ref={slider}>
           <IonSlide>
             <SlideContent
-              title={`Привет, ${name}, Мини-приложения в Aitu`}
+              title={`Привет, ${name}, ${lastname}, Мини-приложения в Aitu`}
               onClick={handleButtonClick}
               description={
                 "Расскажем, что это и как использовать aitu.apps для своего бизнеса"
