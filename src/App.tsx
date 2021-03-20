@@ -78,6 +78,7 @@ const App: React.FC = () => {
     try {
       const data = await aituBridge.getMe();
       setName(data.name);
+      setlastname(data.lastname);
     } catch (e) {
       // handle error
       console.log(e);
